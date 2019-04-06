@@ -4,33 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Crystal Game</title>
+
+
 </head>
 <body>
+<div>
+    
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <h1>Crystal Collector</h1>
+          </div>
+      </div>
 
-    <h1>Crystal Collector</h1>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo expedita similique earum provident deserunt voluptate iste exercitationem porro eum?
-    </p>
-    
-    <div>
-        <div>
-            <h3>Match It!</h3>
-            <h1 id="random-number"></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h3>Instructions</h3>
+          </div>
+          <div class="col-sm-6">
+            <p>Click on a crystal to add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to the random number.</p>
+            <p>If your total score goes above the random number, you lose.</p>
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+        <div id="crystals"></div>
         </div>
     </div>
-    
-    <div>
-        <div>
-            <h3>Your Score</h3>
-            <h1 id="score">0</h1>
-        </div>
-        <div>
-            <h3>Match Score</h3>
-            <h1 id="match">0</h1>
-        </div>
+     <br>
+    <div class="container">
+       <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3"><h3>Match Number:</h3></div>
+            <div class="col-sm-2"><h3 id="random-number"></h3></div>
+            <div class="col-sm-3"><h3>Your Score:</h3></div>
+            <div class="col-sm-2"><h3 id="user-score"></h3></div>
+            <div class="col-sm-1"></div>
+        </div> 
     </div>
-    <div class="crystalDiv"></div>
+    <br>
+    <div class="container">
+        <div class="row">
+             <div class="col-sm-1"></div>
+             <div class="col-sm-3"><h3>Wins:</h3></div>
+             <div class="col-sm-2"><h3 id="wins"></h3></div>
+             <div class="col-sm-3"><h3>Losses:</h3></div>
+             <div class="col-sm-2"><h3 id="losses"></h3></div>
+             <div class="col-sm-1"></div>
+         </div> 
+     </div>
+
+</div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
